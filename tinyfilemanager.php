@@ -1,7 +1,7 @@
 <?php
 
 // Read in config file
-$conf_location = "config.json"
+$conf_location = "config.json";
 $conf_file = fopen($conf_location, "r") or die("Unable to open file!");
 $READ_CONFIG = fread($config_file, filesize($conf_location));
 fclose($config_file);
