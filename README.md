@@ -8,7 +8,13 @@
 [![Paypal](https://img.shields.io/badge/Donate-Paypal-lightgrey.svg?style=flat-square)](https://www.paypal.me/prasathmani)
 > TinyFileManager is web based file manager and it is a simple, fast and small file manager with a single file, multi-language ready web application for storing, uploading, editing and managing files and folders online via web browser. The Application runs on PHP 5.5+, It allows the creation of multiple users and each user can have its own directory and a build-in support for managing text files with cloud9 IDE and it supports syntax highlighting for over 150+ languages and over 35+ themes.
 
+## Changes
+I wish tinyfilemanager were more easily configureable. Unfortunately this means more files.
+- [ ] config file
+- [ ] robust errors
+ 
 ## Demo
+(Original)
 [Demo](https://tinyfilemanager.github.io/demo/)
 
  Login Details : admin/admin@123 | user/12345

@@ -1,6 +1,13 @@
 <?php
+
+// Read in config file
+$conf_location = "config.json"
+$conf_file = fopen($conf_location, "r") or die("Unable to open file!");
+$CONFIG = fread($config_file,filesize($conf_location));
+fclose($config_file);
+
 //Default Configuration
-$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"calc_folder":false}';
+// $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"calc_folder":false}';
 
 /**
  * H3K | Tiny File Manager V2.4.1
