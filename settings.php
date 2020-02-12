@@ -1,5 +1,9 @@
 <?php
 
+// --- AESTHETIC SETTINGS ---
+
+$logo_path = "./h3k.svg";
+
 // --- EDIT SETTINGS BELOW CAREFULLY ---
 
 // Auth with login/password 
