@@ -1,3 +1,7 @@
+<?php
+
+// --- EDIT SETTINGS BELOW CAREFULLY ---
+
 // Auth with login/password 
 // set true/false to enable/disable it
 // Is independent from IP white- and blacklisting
@@ -106,3 +110,4 @@ $ip_blacklist = array(
     '0.0.0.0',      // non-routable meta ipv4
     '::'            // non-routable meta ipv6
 );
+?>
