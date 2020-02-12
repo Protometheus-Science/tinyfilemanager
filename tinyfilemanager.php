@@ -10,16 +10,14 @@ fclose($config_file);
 // $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"calc_folder":false}';
 
 /**
- * H3K | Tiny File Manager V2.4.1
+ * H3K | Tiny File Manager V2.4.2
  * CCP Programmers | ccpprogrammers@gmail.com
  * https://tinyfilemanager.github.io
+ * Protometheus Branch | https://github.com/Protometheus-Science/tinyfilemanager
  */
 
 //TFM version
-define('VERSION', '2.4.1');
-
-//Application Title
-define('APP_TITLE', 'Tiny File Manager');
+define('VERSION', '2.4.2');
 
 require 'settings.php';
 

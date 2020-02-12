@@ -1,5 +1,8 @@
 <?php
 
+//Application Title
+define('APP_TITLE', 'Tiny File Manager');
+
 // --- AESTHETIC SETTINGS ---
 
 $logo_path = "./h3k.svg";
