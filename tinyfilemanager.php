@@ -379,7 +379,7 @@ if (isset($_POST['ajax']) && !FM_READONLY) {
         $allowed = (FM_UPLOAD_EXTENSION) ? explode(',', FM_UPLOAD_EXTENSION) : false;
         $ext = strtolower(pathinfo($fileinfo->name, PATHINFO_EXTENSION));
         $isFileAllowed = ($allowed) ? in_array($ext, $allowed) : true;
-        $file_mode = 755;
+        if (!isset($file_mode)) $file_mode = 764;
         
         function event_callback ($message) {
             global $callback;
@@ -427,7 +427,6 @@ if (isset($_POST['ajax']) && !FM_READONLY) {
         if ($success) {
             $success = 
                 chmod($temp_file, $file_mode) &&
-                // chgrp($temp)
                 rename($temp_file, get_file_path());
         }
 
