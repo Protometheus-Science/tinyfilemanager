@@ -1,14 +1,6 @@
 <?php
 //Default Configuration
-$CONFIG = '{"lang":"en","error_reporting":true,"show_hidden":true}';
-//Default Configuration
-// $CONFIG = '{"lang":"en","error_reporting":true,"show_hidden":true}';
-$config_file = fopen($config_location, "r") or die("Unable to open file!");
-$CONFIG = fread($config_file, filesize($config_location));
-fclose($config_file);
-
-//Default Configuration
-// $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"calc_folder":false}';
+$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"calc_folder":false}';
 
 /**
  * H3K | <?php echo APP_TITLE; ?> V2.4.2
@@ -19,6 +11,8 @@ fclose($config_file);
 
 //TFM version
 define('VERSION', '2.4.2');
+
+require 'settings.php';
 
 // --- EDIT BELOW CAREFULLY OR DO NOT EDIT AT ALL ---
 
