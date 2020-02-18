@@ -1,6 +1,8 @@
 <?php
 //Default Configuration
 $CONFIG = '{"lang":"en","error_reporting":true,"show_hidden":true}';
+//Default Configuration
+// $CONFIG = '{"lang":"en","error_reporting":true,"show_hidden":true}';
 $config_file = fopen($config_location, "r") or die("Unable to open file!");
 $CONFIG = fread($config_file, filesize($config_location));
 fclose($config_file);
@@ -17,8 +19,6 @@ fclose($config_file);
 
 //TFM version
 define('VERSION', '2.4.2');
-
-require 'settings.php';
 
 // --- EDIT BELOW CAREFULLY OR DO NOT EDIT AT ALL ---
 
@@ -431,7 +431,10 @@ if (isset($_POST['ajax']) && !FM_READONLY) {
         }
 
         if ($success) {
-            $success = chmod($temp_file, $file_mode) && rename($temp_file, get_file_path());
+            $success = 
+                chmod($temp_file, $file_mode) &&
+                // chgrp($temp)
+                rename($temp_file, get_file_path());
         }
 
         if ($success) {

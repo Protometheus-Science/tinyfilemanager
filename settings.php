@@ -9,6 +9,8 @@ $logo_path = "./h3k.svg";
 
 // --- EDIT SETTINGS BELOW CAREFULLY ---
 
+$config_location = "./config.json";
+
 // Auth with login/password 
 // set true/false to enable/disable it
 // Is independent from IP white- and blacklisting
